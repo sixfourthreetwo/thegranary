@@ -1,0 +1,200 @@
+$blue: #004cc9;
+$blue2: #00184F;
+$red: #C85177;
+$black: #1d1d1d;
+$white: #FFFFFF;
+$grey: #9B9B9B;
+$border: #CFCFCF;
+$tag: #D1DFED;
+$orange: #FFBB05;
+$green: #71976A;
+
+h1 {
+  font-family: 'aganextra_bold', Arial, sans-serif;
+  font-size: 2.6em;
+  font-weight: 800;
+  margin-top: 80px;
+}
+
+nav {
+  .link-highlight {
+    margin-top: 26px;
+  }
+}
+
+.header-background {
+  background-image: url("../img/header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-copy {
+  font-family: 'aganregular', Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 120px;
+  line-height: 1.6em;
+
+}
+
+.logo {
+  width: 26%;
+}
+
+.shape1 {
+  margin-top: 100px;
+}
+
+.shape2 {
+  margin-top: -100px;
+}
+
+.buffer-sm {
+  padding: 100px 0;
+}
+
+.buffer-lg {
+  padding: 200px 0;
+}
+
+.buffer-exlg {
+  padding: 400px 0;
+}
+
+.portfolio-item {
+  background-color: $green;
+  width: 100%;
+  height: 320px;
+  margin: 20px 0;
+}
+
+.push-md {
+  margin-top: 180px;
+}
+
+.push-lg {
+  margin-top: 320px;
+}
+
+/** FullScreen Slider **/
+
+.bg-gradient {
+  background: #00C9FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slider-paragraph {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.dribbble-icon {
+  width: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.4em;
+  cursor: pointer;
+}
+
+.link-highlight {
+  display: inline-block;
+  position: relative;
+  margin: 0 -4px -8px;
+  padding: 0 4px;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 400ms;
+}
+
+.link-highlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(113, 151, 106, 0.25);
+  top: 60%;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  transform: scale(1, 1);
+  transform-origin: center bottom;
+  transition: all 400ms;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.link-highlight:hover {
+  color: white;
+}
+
+.link-highlight:hover:before {
+  background: black;
+  transform: scale(1.2, 2.4);
+}
+
+.link-highlight:focus {
+  outline-color: rgba(0, 0, 0, 0.1);
+  outline-width: 1px;
+  outline-offset: -3px;
+}
+
+.link-highlight.link-highlight-sopost:hover:before {
+  background: $green;
+}
+
+.schedule-card {
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: -8% auto;
+  height: auto;
+  position: relative;
+  padding: 20px 30px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    top: 20%;
+    z-index: -1;
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+.secondary-header {
+  font-family: 'aganebold', Arial, sans-serif;
+  font-size: 1.4em;
+  color: $grey;
+}
+
+.schedule-one {
+  background-color: #F5F4F5;
+  border-radius: 14px;
+  margin: 12px 0;
+  max-width: 700px;
+  height: auto;
+  position: relative;
+  padding: 6px 30px;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+.schedule-one:hover {
+  background-color: $orange;
+  transition: .4s ease-in-out;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+@media screen and (max-width: 47.9375em) {
+  .dribbble-icon {
+    width: 40%;
+  }
+}
