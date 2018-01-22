@@ -178,9 +178,8 @@ a {
   background-color: #F5F4F5;
   border-radius: 14px;
   margin: 12px 0;
-  max-width: 700px;
+  max-width: 100%;
   height: auto;
-  position: relative;
   padding: 6px 30px;
   transition: .4s ease-in-out;
   cursor: pointer;
@@ -189,8 +188,59 @@ a {
 .schedule-one:hover {
   background-color: $orange;
   transition: .4s ease-in-out;
+  max-width: 110%;
   box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2);
+}
 
+.schedule-card2 {
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 80%;
+  margin: 8% auto;
+  height: auto;
+  position: relative;
+  padding: 20px 30px;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  width: 90%;
+  margin: 8rem auto;
+}
+
+.item-title {
+}
+
+.item-text {
+  font-size: 1rem;
+}
+
+.flex-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.6rem;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+   flex-direction: column;
+
+}
+
+
+.flex-item {
+  background-color: #F5F4F5;
+  height: auto;
+  padding: 2%;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.flex-item:hover {
+  background-color: $orange;
+  cursor: pointer;
+  transition: background-color 500ms;
 }
 
 @media screen and (max-width: 47.9375em) {
