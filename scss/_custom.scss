@@ -9,8 +9,25 @@ $tag: #D1DFED;
 $orange: #FFBB05;
 $green: #71976A;
 
+$light: 'agane_light', Arial, sans-serif;
+$regular: 'agane_regular', Arial, sans-serif;
+$bold: 'agane_bold', Arial, sans-serif;
+$exbold: 'agane_extra_bold', Arial, sans-serif;
+
+@mixin card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: auto;
+  height: auto;
+  position: relative;
+  padding: 20px 30px;
+  transform: translate(0, -26%);
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
 h1 {
-  font-family: 'aganextra_bold', Arial, sans-serif;
+  font-family: $bold;
   font-size: 2.6em;
   font-weight: 800;
   margin-top: 80px;
@@ -33,7 +50,6 @@ a:hover {
   background-size: 100% 100%;
 }
 
-
 .header-background {
   background-image: url("../img/header_bg.png");
   background-repeat: no-repeat;
@@ -41,7 +57,7 @@ a:hover {
 }
 
 .header-copy {
-  font-family: 'aganregular', Arial, sans-serif;
+  font-family: $regular;
   font-size: 1.3em;
   font-weight: 400;
   margin-bottom: 120px;
@@ -64,23 +80,14 @@ a:hover {
   padding: 400px 0;
 }
 
-
 .secondary-header {
-  font-family: 'aganebold', Arial, sans-serif;
+  font-family: $bold;
   font-size: 1.4em;
   color: $grey;
 }
 
-.wrapper {
-  background-color: white;
-  border-radius: 20px;
-  max-width: 90%;
-  margin:  auto;
-  height: auto;
-  position: relative;
-  padding: 20px 30px;
-  transform: translate(0, -26%);
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+.schedule-card {
+@include card;
 }
 
 .schedule-item {
@@ -93,7 +100,7 @@ a:hover {
   margin: 2% auto;
 }
 
-.card:hover{
+.schedule-item:hover {
   background-color: $orange;
   transform: scale(1.03);
   transition: .5s ease-in-out;
@@ -104,6 +111,16 @@ a:hover {
 .section-two {
   flex: 1;
   padding: 10px 20px;
+}
+
+#process-icon {
+  width: 20%;
+  height: 100%;
+}
+
+.previous-card {
+  @include card;
+  height: 320px;
 }
 
 @media screen and (max-width: 47.9375em) {
