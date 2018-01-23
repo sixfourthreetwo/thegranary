@@ -710,8 +710,19 @@ h1 {
   font-weight: 800;
   margin-top: 80px; }
 
-nav .link-highlight {
-  margin-top: 26px; }
+nav a {
+  margin-top: 40px; }
+
+a {
+  background-image: linear-gradient(0deg, #FFBB05 20%, transparent 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+  line-height: 1;
+  text-decoration: none; }
+
+a:hover {
+  background-size: 100% 100%; }
 
 .header-background {
   background-image: url("../img/header_bg.png");
@@ -728,12 +739,6 @@ nav .link-highlight {
 .logo {
   width: 26%; }
 
-.shape1 {
-  margin-top: 100px; }
-
-.shape2 {
-  margin-top: -100px; }
-
 .buffer-sm {
   padding: 100px 0; }
 
@@ -743,160 +748,41 @@ nav .link-highlight {
 .buffer-exlg {
   padding: 400px 0; }
 
-.portfolio-item {
-  background-color: #71976A;
-  width: 100%;
-  height: 320px;
-  margin: 20px 0; }
-
-.push-md {
-  margin-top: 180px; }
-
-.push-lg {
-  margin-top: 320px; }
-
-/** FullScreen Slider **/
-.bg-gradient {
-  background: #00C9FF;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #92FE9D, #00C9FF);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.slider-paragraph {
-  position: absolute;
-  top: 10%;
-  left: 10%; }
-
-.dribbble-icon {
-  width: 80px; }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1.4em;
-  cursor: pointer; }
-
-.link-highlight {
-  display: inline-block;
-  position: relative;
-  margin: 0 -4px -8px;
-  padding: 0 4px;
-  z-index: 10;
-  overflow: hidden;
-  transition: all 400ms; }
-
-.link-highlight:before {
-  content: "";
-  display: block;
-  position: absolute;
-  background: rgba(113, 151, 106, 0.25);
-  top: 60%;
-  bottom: 1px;
-  left: 1px;
-  right: 1px;
-  transform: scale(1, 1);
-  transform-origin: center bottom;
-  transition: all 400ms;
-  pointer-events: none;
-  z-index: -1; }
-
-.link-highlight:hover {
-  color: white; }
-
-.link-highlight:hover:before {
-  background: black;
-  transform: scale(1.2, 2.4); }
-
-.link-highlight:focus {
-  outline-color: rgba(0, 0, 0, 0.1);
-  outline-width: 1px;
-  outline-offset: -3px; }
-
-.link-highlight.link-highlight-sopost:hover:before {
-  background: #71976A; }
-
-.schedule-card {
-  background-color: #fff;
-  border-radius: 20px;
-  max-width: 800px;
-  margin: -8% auto;
-  height: auto;
-  position: relative;
-  padding: 20px 30px; }
-  .schedule-card:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: black;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    top: 20%;
-    z-index: -1;
-    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07); }
-
 .secondary-header {
   font-family: 'aganebold', Arial, sans-serif;
   font-size: 1.4em;
   color: #9B9B9B; }
 
-.schedule-one {
-  background-color: #F5F4F5;
-  border-radius: 14px;
-  margin: 12px 0;
-  max-width: 100%;
-  height: auto;
-  padding: 6px 30px;
-  transition: .4s ease-in-out;
-  cursor: pointer; }
-
-.schedule-one:hover {
-  background-color: #FFBB05;
-  transition: .4s ease-in-out;
-  max-width: 110%;
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2); }
-
-.schedule-card2 {
-  background-color: #fff;
+.wrapper {
+  background-color: white;
   border-radius: 20px;
-  max-width: 80%;
-  margin: 8% auto;
+  max-width: 90%;
+  margin: auto;
   height: auto;
   position: relative;
   padding: 20px 30px;
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2); }
+  transform: translate(0, -26%);
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07); }
 
-.wrapper {
-  width: 90%;
-  margin: 8rem auto; }
-
-.item-text {
-  font-size: 1rem; }
-
-.flex-container {
-  background-color: white;
+.schedule-item {
+  background: #F5F4F5;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  padding: 2.6rem;
-  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
-  border-radius: 20px;
-  flex-direction: column; }
-
-.flex-item {
-  background-color: #F5F4F5;
-  height: auto;
-  padding: 2%;
-  font-family: sans-serif;
-  font-size: 1.4rem;
-  margin: 10px 0;
-  border-radius: 10px; }
-
-.flex-item:hover {
-  background-color: #FFBB05;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 500ms; }
+  transition: .5s ease-in-out;
+  margin: 2% auto; }
+
+.card:hover {
+  background-color: #FFBB05;
+  transform: scale(1.03);
+  transition: .5s ease-in-out;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07); }
+
+.section-one,
+.section-two {
+  flex: 1;
+  padding: 10px 20px; }
 
 @media screen and (max-width: 47.9375em) {
   .dribbble-icon {
