@@ -9,11 +9,6 @@ $tag: #D1DFED;
 $orange: #FFBB05;
 $green: #71976A;
 
-$light: 'agane_light', Arial, sans-serif;
-$regular: 'agane_regular', Arial, sans-serif;
-$bold: 'agane_bold', Arial, sans-serif;
-$exbold: 'agane_extra_bold', Arial, sans-serif;
-
 @mixin card {
   background-color: white;
   border-radius: 20px;
@@ -27,8 +22,8 @@ $exbold: 'agane_extra_bold', Arial, sans-serif;
 }
 
 h1 {
-  font-family: $bold;
-  font-size: 2.6em;
+  letter-spacing: 1.2px;
+  font-size: 3em;
   font-weight: 800;
   margin-top: 80px;
 }
@@ -57,7 +52,6 @@ a:hover {
 }
 
 .header-copy {
-  font-family: $regular;
   font-size: 1.3em;
   font-weight: 400;
   margin-bottom: 120px;
@@ -81,7 +75,6 @@ a:hover {
 }
 
 .secondary-header {
-  font-family: $bold;
   font-size: 1.4em;
   color: $grey;
 }
