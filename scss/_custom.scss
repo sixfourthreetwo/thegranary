@@ -1,0 +1,218 @@
+$blue: #004cc9;
+$blue2: #00184F;
+$red: #C85177;
+$black: #1d1d1d;
+$white: #FFFFFF;
+$grey: #9B9B9B;
+$border: #CFCFCF;
+$tag: #D1DFED;
+$orange: #FFBB05;
+$green: #71976A;
+
+@mixin card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: auto;
+  height: auto;
+  position: relative;
+  padding: 20px 30px;
+  transform: translate(0, -26%);
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+  letter-spacing: 1.2px;
+  font-size: 3em;
+  font-weight: 800;
+  margin-top: 80px;
+}
+
+nav a {
+  margin-top: 40px;
+}
+
+a {
+  background-image: linear-gradient(0deg, $orange 20%, transparent 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
+.header-background {
+  background-image: url("../img/header_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-copy {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 120px;
+  line-height: 1.6em;
+}
+
+.logo {
+  width: 26%;
+}
+
+.buffer-sm {
+  padding: 100px 0;
+}
+
+.buffer-lg {
+  padding: 200px 0;
+}
+
+.buffer-exlg {
+  padding: 400px 0;
+}
+
+.secondary-header {
+  font-size: 1.4em;
+  color: $grey;
+}
+
+.schedule-card {
+  @include card;
+}
+
+.schedule-item {
+  background: #F5F4F5;
+  position: relative;
+  display: flex;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  margin: 2% auto;
+}
+
+.schedule-item:hover {
+  background-color: $orange;
+  transform: scale(1.03);
+  transition: .5s ease-in-out;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
+.section-one,
+.section-two {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+#process-icon {
+  width: 20%;
+  height: 100%;
+}
+
+.kc-1 {
+  background-image: url("../img/cookies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.kc-2 {
+  background-image: url("../img/cupcakes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  @include card;
+  flex: 1 0 500px;
+  box-sizing: border-box;
+  margin: 1rem 2em;
+  height: 220px;
+  -webkit-transition: .3s;
+  transition: .5s ease-in-out;
+  border-radius: 14px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  padding: 1px 24px;
+}
+
+.card:hover {
+  transform: translateY(2px);
+  -webkit-transition: .3s;
+  transition: .3s ease-in;
+}
+
+.previous-background {
+  border-radius: 16%;
+  width: 120%;
+  height: 110%;
+  background: $orange;
+  position: absolute;
+  z-index: -2;
+  transform: rotate(7deg);
+  opacity: 0.2;
+}
+
+.push-sm {
+  margin-top: 50px;
+}
+
+.box {
+  background-color: #f4f4f4;
+  padding: 12px 6px;
+  height: 220px;
+  -webkit-transition: .3s;
+  transition: .5s ease-in-out;
+  border-radius: 14px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: translateY(-4px);
+  -webkit-transition: .3s;
+  transition: .5s ease-in;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
+.button {
+  background-color: $orange;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 40px;
+  text-decoration: none;
+  border: none;
+   transition: .3s ease-in;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+}
+
+.button:hover {
+   transition: .3s ease-in;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.20);
+}
+
+.button:active {
+  position: relative;
+  top: 2px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 47.9375em) {
+  .dribbble-icon {
+	width: 40%;
+  }
+}

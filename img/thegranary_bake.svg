@@ -1,0 +1,14 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .st11,.st6{fill:none;stroke:#ffbb05;stroke-width:3;stroke-miterlimit:10}.st11{stroke:#000}
+  </style>
+  <g id="Mixer_3_">
+    <path class="st6" d="M2 12.2h48"/>
+    <path class="st11" d="M41.5 17.7h-32c-4.4 0-8-3.6-8-8s3.6-8 8-8h32c4.4 0 8 3.6 8 8s-3.6 8-8 8zM58.5 62.7h-53c-2.2 0-4-1.8-4-4s1.8-4 4-4h53c2.2 0 4 1.8 4 4s-1.8 4-4 4zM3.6 15.1s9.1 18.5 0 40M15.6 54.7v-37"/>
+    <path d="M37 29.2h6c1.1 0 2-.9 2-2s-.9-2-2-2h-6c-1.1 0-2 .9-2 2s.9 2 2 2z"/>
+    <path class="st11" d="M40 19.2v10"/>
+    <path class="st6" d="M58.5 28.7c0 10.5-8.5 19-19 19s-19-8.5-19-19h38z"/>
+    <path fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M11.5 35.7h24"/>
+    <circle cx="40" cy="7.2" r="2" fill="#ffbb05"/>
+  </g>
+</svg>
